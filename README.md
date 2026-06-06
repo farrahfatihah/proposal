@@ -11,19 +11,22 @@ Group Member :
 
 ## Introduction
 
+StudyBuddy is a web-based platform developed to help students collaborate and support each other in their studies. Many students face difficulties in finding study partners, organizing study sessions, and getting help for challenging subjects. This system provides a simple solution by allowing students to create and join study groups based on their courses and learning needs.
 
+The system is developed using the Laravel framework and follows the Model-View-Controller (MVC) architecture. Through the platform, students can create study sessions, upload study materials, submit help requests, communicate with other users, and monitor their learning activities. The system also provides user authentication to ensure that only registered users can access the platform.
 
-
-
-
-
-
-
+The main purpose of StudyBuddy is to encourage collaborative learning, improve academic performance, and create a supportive learning environment among students.
 
 ## Objectives
 
+The objectives of the StudyBuddy system are:
 
-
+1. To provide a platform for students to create and join study groups easily.
+2. To help students find academic support through help requests and peer responses.
+3. To allow users to share study materials and learning resources with group members.
+4. To improve communication and collaboration among students through study group interactions.
+5. To track study activities using attendance records and session ratings.
+6. To create a more organized and effective learning environment for students.
 
 ## Feature & Functionalities
 ### 1) **Front Page**
@@ -213,8 +216,23 @@ Group Member :
 
 ## MVC Explaination
 
+The StudyBuddy system is developed using the MVC (Model-View-Controller) architecture provided by Laravel.
 
+### Model
 
+The Model manages the data and business logic of the system. In this project, models such as StudyGroup, HelpRequest, Attendance, Rating, GroupChat, and User are used to store and retrieve information from the database. These models handle study sessions, help requests, attendance records, ratings, chat messages, and user information.
+
+### View
+
+The View is responsible for displaying information to users. The views present study groups, help requests, dashboards, forms, and other user interfaces. Users interact with the system through these pages to create sessions, join groups, and submit requests.
+
+### Controller
+
+The Controller acts as a bridge between the Model and the View. In this project, the DashboardController processes user requests, validates input data, retrieves information from the database, and returns the appropriate views. It also handles functions such as creating study sessions, updating sessions, joining groups, managing attendance, ratings, help requests, and chat messages.
+
+### Benefits of MVC
+
+The MVC architecture helps organize the system into separate components. This makes the system easier to maintain, update, test, and expand in the future.
 
 
 
